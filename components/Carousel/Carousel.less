@@ -1,10 +1,15 @@
 .carousel {
+  
   .width-100();
   .flex(center, center);
+  // display: flex;
   height: 500px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
+  background: red;
+  // transition: transform .5s ease 0s;
+
   @media(min-width: 1200px){
     width: 1200px;
   }
@@ -36,6 +41,11 @@
   }
   img {
     .width-100();
-    display: none;
+    background: blue;
+    transition: width .4s ease 0s;
+    height: 100%;
+    // width: 200%;
+    // display: none;
   }
+
 }
